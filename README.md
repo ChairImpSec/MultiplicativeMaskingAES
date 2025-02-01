@@ -23,7 +23,7 @@ This folder contains the second-order implementation of the Kronecker delta func
 
 ## Contact and Support
 
-For questions or comments, please contact **Hemin Rahimi** at [rahimihemin@gmail.com](mailto:rahimihemin@gmail.com).
+For questions or comments, please contact **Hemin Rahimi** at [rahimihemin[at]gmail.com](mailto:rahimihemin@gmail.com).
 
 ## Publication
 
