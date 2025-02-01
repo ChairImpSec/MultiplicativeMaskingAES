@@ -19,7 +19,7 @@ This folder contains the first-order implementation of the AES Sbox in three sub
 3. **Glitch- and transition-robust**: The Sbox structure with the proposed randomness optimization, ensuring no leakage under both glitch-extended and transition-extended probing models.  
 
 ### **Kronecker_d2**  
-This folder contains the first-order implementation of the Kronecker delta function with the proposed randomness optimization. Based on the PROLEAD report, this implementation exhibits no leakage.
+This folder contains the second-order implementation of the Kronecker delta function with the proposed randomness optimization. Based on the PROLEAD report, this implementation exhibits no leakage.
 
 ## Contact and Support
 
