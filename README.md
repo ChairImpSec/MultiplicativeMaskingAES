@@ -13,7 +13,7 @@ This repository provides the implementation the proposed designs, evaluation scr
 There are two main folders in this repository:
 
 ### **Sbox_d1**  
-This folder contains the first-order implementation of the AES Sbox in three forms:  
+This folder contains the first-order implementation of the AES Sbox in three sub-folders:  
 1. **Original form**: The original implementation of the proposed Sbox from [*Multiplicative Masking for AES in Hardware*](https://tches.iacr.org/index.php/TCHES/article/view/7282).  
 2. **Glitch-robust**: The Sbox structure with the proposed randomness optimization, ensuring no leakage under the glitch-extended probing model.  
 3. **Glitch- and transition-robust**: The Sbox structure with the proposed randomness optimization, ensuring no leakage under both glitch-extended and transition-extended probing models.  
