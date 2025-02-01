@@ -4,9 +4,9 @@ This repository contains the source code and results related to the article titl
 
 ## Short Description
 
-This work focuses on the security evaluation of [*Multiplicative Masking for AES in Hardware*](https://tches.iacr.org/index.php/TCHES/article/view/7282). Using the [PROLEAD tool](https://github.com/ChairImpSec/PROLEAD), we analyzed vulnerabilities in the Kronecker delta function under the glitch-extended and glitch + transition-extended probing models. Our findings revealed critical leakage caused by randomness optimization. To address this, we proposed and validated optimized solutions to ensure first-order security.
+This work focuses on the security evaluation of the CHES 2018 paper titled [*Multiplicative Masking for AES in Hardware*](https://tches.iacr.org/index.php/TCHES/article/view/7282). Using the [PROLEAD tool](https://github.com/ChairImpSec/PROLEAD), we analyzed vulnerabilities in the Kronecker delta function under the glitch-extended and glitch + transition-extended probing models. Our findings revealed critical leakage caused by randomness optimization. To address this, we proposed and validated optimized solutions to ensure first-order security.
 
-This repository provides the source code for the proposed designs, evaluation scripts, and comprehensive results supporting our conclusions.
+This repository provides the implementation the proposed designs, evaluation scripts, and PROLEAD's results supporting our conclusions.
 
 ## Repository Structure
 
