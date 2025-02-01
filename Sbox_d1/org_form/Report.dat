@@ -1,0 +1,82 @@
+Library file:   ../library.lib
+Library name:   custom
+Design file:    ../design.v
+Module name:    circuit
+Linker file:    linker.ld
+Settings file:  ../config_sbox_d1.set
+Result folder:  .
+
+Start Hardware Leakage Evaluation
+
+Read settings file before design file...done with 0 warnings!
+Read library file...done!
+Read design file..."circuit"...done!
+Make circuit depth...done!
+Read settings file...done with 8 warnings!
+    Warning "end_wait_cycles" is not specified. Default "end_wait_cycles" = 0 is taken!
+    Warning "multivariate_test" is not specified. Default "multivariate_test" = no is taken!
+    Warning "minimize_probe_sets" is not specified. Default "minimize_probe_sets" = no is taken!
+    Warning "remove_full_probing_sets" is not specified. Default "remove_full_probing_sets" = no is taken!
+    Warning "no_of_entries_in_report" is not specified. Default "no_of_entries_in_report" = 10 is taken!
+    Warning "max_distance_multivariate" is not specified. Default "max_distance_multivariate" = 10 is taken!
+    Warning "no_of_probing_sets_per_step" is not specified. Default "no_of_probing_sets_per_step" = all is taken!
+    Warning "effect_size" is not specified. Default "effect_size" = 0.1 is taken!
+Construct probes...done!
+Prepare simulation memory...done!
+Prepare shared data for 10 threads ...done!
+
+Generate univariate probing sets...1110 probing sets generated...done!
+Remove duplicated probing sets...852 probing sets remain...done!
+-------------------------------------------------------------------------------------------------------------------------------------
+| #Standard Probes | #Extended Probes | #Probing Sets | Minimum #Probes per Set | Maximum #Probes per Set | Average #Probes per Set |
+-------------------------------------------------------------------------------------------------------------------------------------
+|             1110 |             1176 |           852 |                       1 |                      36 |                6.210094 |
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Evaluate security under the robust probing model!
+----------------------------------------------------------------------------------------------------------------------------------------
+|      Elapsed Time |      Required Ram |  Processed Simulations | Probing Set with highest Information Leakage |  -log10(p) |  Status |
+----------------------------------------------------------------------------------------------------------------------------------------
+|         0.393309s |        0.892704GB |                 102400 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         0.781638s |        0.892704GB |                 204800 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         1.163193s |        0.892704GB |                 307200 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         1.547926s |        0.892704GB |                 409600 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         1.939591s |        0.892704GB |                 512000 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         2.331271s |        0.892704GB |                 614400 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         2.721447s |        0.892704GB |                 716800 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         3.111230s |        0.892704GB |                 819200 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         3.505207s |        0.892704GB |                 921600 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         3.891403s |        0.892704GB |                1024000 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         4.284367s |        0.892704GB |                1126400 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         4.662890s |        0.892704GB |                1228800 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         5.054996s |        0.892704GB |                1331200 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         5.442265s |        0.892704GB |                1433600 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         5.836058s |        0.892704GB |                1536000 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         6.230661s |        0.892704GB |                1638400 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         6.616622s |        0.892704GB |                1740800 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         7.011782s |        0.892704GB |                1843200 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         7.396803s |        0.892704GB |                1945600 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         7.780602s |        0.892704GB |                2048000 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         8.173645s |        0.892704GB |                2150400 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         8.558101s |        0.892704GB |                2252800 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         8.951980s |        0.892704GB |                2355200 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         9.342536s |        0.892704GB |                2457600 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|         9.740214s |        0.892704GB |                2560000 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        10.131837s |        0.892704GB |                2662400 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        10.524794s |        0.892704GB |                2764800 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        10.921005s |        0.892704GB |                2867200 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        11.308630s |        0.892704GB |                2969600 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        11.703053s |        0.892704GB |                3072000 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        12.093430s |        0.892704GB |                3174400 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        12.482036s |        0.892704GB |                3276800 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        12.867509s |        0.892704GB |                3379200 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        13.270308s |        0.892704GB |                3481600 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        13.669862s |        0.892704GB |                3584000 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        14.060590s |        0.892704GB |                3686400 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        14.462698s |        0.892704GB |                3788800 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        14.861019s |        0.892704GB |                3891200 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        15.258496s |        0.892704GB |                3993600 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+|        15.647876s |        0.892704GB |                4096000 |                  \inst_kronecker.G6.AND1 (2) |        inf | LEAKAGE |
+----------------------------------------------------------------------------------------------------------------------------------------
+Evaluation done in 15.6496 seconds!
+done!

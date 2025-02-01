@@ -1,0 +1,20 @@
+Report file after 100000000 simulations:
+
+1.) Summary of most leaking (and already active) probing sets per clock cycle: 
+
+Clock cycle 1: @[Ay2[2] (0), \G5.D7.in (0)] ==> [PRNG[10] (0), \G2.D3.out (0), \G2.D2.out (0), \G2.D1.out (0), \G1.D9.out (0), \G1.D8.out (0), \G1.D7.out (0)] -log10(p) = 2.58377 --> OKAY
+Clock cycle 2: @[Ay3[1] (2), \G1.D7.in (2)] ==> [shared_inp[0] (2), shared_inp[17] (2), PRNG[1] (2), shared_inp[0] (1), shared_inp[17] (1), PRNG[1] (1)] -log10(p) = 1.55225 --> OKAY
+Clock cycle 3: @[Ax3[1] (3), \G3.D6.in (3)] ==> [shared_inp[5] (3), shared_inp[12] (3), PRNG[8] (3), shared_inp[5] (2), shared_inp[12] (2), PRNG[8] (2)] -log10(p) = 1.66137 --> OKAY
+
+2.) Summary of the most leakging (and already active) probing sets: 
+
+1: @[Ay2[2] (0), \G5.D7.in (0)] ==> [PRNG[10] (0), \G2.D3.out (0), \G2.D2.out (0), \G2.D1.out (0), \G1.D9.out (0), \G1.D8.out (0), \G1.D7.out (0)] -log10(p) = 2.58377 --> OKAY
+2: @[Ay1[2] (0), \G5.D3.in (0)] ==> [PRNG[10] (0), \G2.D9.out (0), \G2.D8.out (0), \G2.D7.out (0), \G1.D3.out (0), \G1.D2.out (0), \G1.D1.out (0)] -log10(p) = 2.58377 --> OKAY
+3: @[\G5.D8.in (0), \for_r62.in (0)] ==> [PRNG[2] (0), PRNG[5] (0)] -log10(p) = 2.20691 --> OKAY
+4: @[Ax1[2] (1), \G4.D7.in (1)] ==> [shared_inp[6] (1), shared_inp[23] (1), PRNG[10] (1), shared_inp[6] (0), shared_inp[23] (0), PRNG[10] (0)] -log10(p) = 1.85355 --> OKAY
+5: @[\G1.AND9 (1), \G7.D2.in (1)] ==> [\for_r71.out (1), \G6.D6.out (1), \G6.D5.out (1), \G6.D4.out (1), \G5.D3.out (1), \G5.D2.out (1), \G5.D1.out (1), \for_r71.out (0), \G6.D6.out (0), \G6.D5.out (0), \G6.D4.out (0), \G5.D3.out (0), \G5.D2.out (0), \G5.D1.out (0)] -log10(p) = 1.83647 --> OKAY
+6: @[\G7.AND1 (1), \for_r71.in (1)] ==> [PRNG[1] (1), PRNG[7] (1), PRNG[1] (0), PRNG[7] (0)] -log10(p) = 1.78098 --> OKAY
+7: @[Ax3[1] (3), \G3.D6.in (3)] ==> [shared_inp[5] (3), shared_inp[12] (3), PRNG[8] (3), shared_inp[5] (2), shared_inp[12] (2), PRNG[8] (2)] -log10(p) = 1.66137 --> OKAY
+8: @[Ax0[2] (0), \G2.D6.in (0)] ==> [shared_inp[3] (0), shared_inp[10] (0), PRNG[5] (0)] -log10(p) = 1.65774 --> OKAY
+9: @[\G3.D2.in (3), \G7.AND9 (3)] ==> [\G6.D9.out (3), \G6.D8.out (3), \G6.D7.out (3), \G5.D9.out (3), \G5.D8.out (3), \G5.D7.out (3), \G6.D9.out (2), \G6.D8.out (2), \G6.D7.out (2), \G5.D9.out (2), \G5.D8.out (2), \G5.D7.out (2)] -log10(p) = 1.58781 --> OKAY
+10: @[Ay3[1] (2), \G1.D7.in (2)] ==> [shared_inp[0] (2), shared_inp[17] (2), PRNG[1] (2), shared_inp[0] (1), shared_inp[17] (1), PRNG[1] (1)] -log10(p) = 1.55225 --> OKAY
