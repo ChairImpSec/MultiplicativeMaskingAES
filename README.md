@@ -1,6 +1,6 @@
 # One More Motivation to Use Evaluation Tools<br>  This Time for Hardware Multiplicative Masking of AES
 
-This repository contains the source code and results related to the article titled [*One More Motivation to Use Evaluation Tools, This Time for Hardware Multiplicative Masking of AES*](www.empty.com).
+This repository contains the source code and results related to the article titled [*One More Motivation to Use Evaluation Tools, This Time for Hardware Multiplicative Masking of AES*](www.empty.com) published at DATE 2025.
 
 ## Short Description
 
@@ -30,4 +30,4 @@ For questions or comments, please contact **Hemin Rahimi** at [rahimihemn[at]gma
 
 ## Publication
 
-[*One More Motivation to Use Evaluation Tools, This Time for Hardware Multiplicative Masking of AES*](www.empty.com).
+Hemin Rahimi, Amir Moradi: [*One More Motivation to Use Evaluation Tools, This Time for Hardware Multiplicative Masking of AES*](www.empty.com). DATE 2025
