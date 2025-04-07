@@ -1,0 +1,125 @@
+Successfully parsed the settings file at "config.json".
+Successfully validated the settings file at "config.json".
+Successfully opened the library file at "../../library.json".
+Successfully read the library with name "NANG45".
+Successfully parsed 35 cells from the library.
+Successfully found buffer cell with identifier "BUF_X1" and others.
+"circuit"..."r0_mapper"..."mux_2to1"..."register_N8_1"..."register_N8_0"..."register_N16_0"..."kronecker"..."And_DOM_indep_d1_0"..."register_N1_0"..."register_N1_27"..."register_N1_26"..."register_N1_25"..."And_DOM_indep_d1_6"..."register_N1_24"..."register_N1_23"..."register_N1_22"..."register_N1_21"..."And_DOM_indep_d1_5"..."register_N1_20"..."register_N1_19"..."register_N1_18"..."register_N1_17"..."And_DOM_indep_d1_4"..."register_N1_16"..."register_N1_15"..."register_N1_14"..."register_N1_13"..."And_DOM_indep_d1_3"..."register_N1_12"..."register_N1_11"..."register_N1_10"..."register_N1_9"..."And_DOM_indep_d1_2"..."register_N1_8"..."register_N1_7"..."register_N1_6"..."register_N1_5"..."And_DOM_indep_d1_1"..."register_N1_4"..."register_N1_3"..."register_N1_2"..."register_N1_1"..."register_N16_3"..."register_N16_2"..."register_N16_1"..."gf256_multiplier_0"..."gf256_multiplier_3"..."register_N8_7"..."register_N8_6"..."register_N8_5"..."inversion"..."register_N8_4"..."register_N8_3"..."register_N8_2"..."gf256_multiplier_2"..."gf256_multiplier_1"..."register_N2_0"..."register_N2_1"..."linear_mapping_0"..."linear_mapping_1"...done
+Successfully matched 20 fresh mask signals (for rising edge) [{PRNG[0]}, {PRNG[1]}, {PRNG[2]}, {PRNG[3]}, {PRNG[4]}, {PRNG[5]}, {PRNG[6]}, {PRNG[7]}, {PRNG[8]}, {PRNG[9]}, {PRNG[10]}, {PRNG[11]}, {PRNG[12]}, {PRNG[13]}, {PRNG[14]}, {PRNG[15]}, {PRNG[16]}, {PRNG[17]}, {PRNG[18]}, {PRNG[19]}].
+Evaluate the circuit under the robust probing model!
+76 different spots to probe detected!
+Generate univariate probing sets...532 probing sets generated...done!
+Remove duplicated probing sets...343 probing sets remain...done!
+Remove strictly less informative probing sets...Setting univariate case...done! 315 probing sets remain!
+-------------------------------------------------------------------------------------------------------------------------------------
+| #Standard Probes | #Extended Probes | #Probing Sets | Minimum #Probes per Set | Maximum #Probes per Set | Average #Probes per Set |
+-------------------------------------------------------------------------------------------------------------------------------------
+|              532 |              910 |           315 |                       2 |                      18 |                7.733333 |
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Evaluate security under the robust probing model!
+----------------------------------------------------------------------------------------------------------------------------------------
+|      Elapsed Time |      Required Ram |  Processed Simulations | Probing Set with highest Information Leakage |  -log10(p) |  Status |
+----------------------------------------------------------------------------------------------------------------------------------------
+|         0.524403s |       17.903464GB |                 409600 |              [\inst_kronecker.G5.xorout0(5)] |   1.821803 |    OKAY |
+|         0.993359s |       17.903464GB |                 819200 |                               [SB_out[8](3)] |   2.132570 |    OKAY |
+|         1.459556s |       17.903464GB |                1228800 |                          [p1_invXORr1[3](6)] |   2.228601 |    OKAY |
+|         1.930117s |       17.903464GB |                1638400 |              [\inst_kronecker.G6.xorout1(5)] |   2.250057 |    OKAY |
+|         2.415987s |       17.903464GB |                2048000 |              [\inst_kronecker.G1.xorout1(6)] |   1.897664 |    OKAY |
+|         2.900798s |       17.903464GB |                2457600 |                 [\inst_kronecker.G7.AND0(5)] |   1.699089 |    OKAY |
+|         3.370488s |       17.903464GB |                2867200 |                 [\inst_kronecker.G7.AND0(5)] |   2.014373 |    OKAY |
+|         3.834561s |       17.903464GB |                3276800 |                          [p1_invXORr1[0](6)] |   1.917264 |    OKAY |
+|         4.313242s |       17.903464GB |                3686400 |                 [\inst_kronecker.G7.AND0(5)] |   1.736061 |    OKAY |
+|         4.775731s |       17.903464GB |                4096000 |                               [SB_out[8](3)] |   1.894264 |    OKAY |
+|         5.253223s |       17.903464GB |                4505600 |              [\inst_kronecker.G7.xorout0(7)] |   2.129785 |    OKAY |
+|         5.720626s |       17.903464GB |                4915200 |              [\inst_kronecker.G7.xorout0(7)] |   2.494525 |    OKAY |
+|         6.206219s |       17.903464GB |                5324800 |              [\inst_kronecker.G6.xorout1(6)] |   1.690658 |    OKAY |
+|         6.668138s |       17.903464GB |                5734400 |                 [\inst_kronecker.G5.AND3(4)] |   1.677702 |    OKAY |
+|         7.142798s |       17.903464GB |                6144000 |                 [\inst_kronecker.G5.AND3(4)] |   1.997623 |    OKAY |
+|         7.611513s |       17.903464GB |                6553600 |              [\inst_kronecker.G6.xorout1(6)] |   2.323703 |    OKAY |
+|         8.083514s |       17.903464GB |                6963200 |         [\inst_r0_zero_mapper.mux_out[1](2)] |   2.560767 |    OKAY |
+|         8.570644s |       17.903464GB |                7372800 |         [\inst_r0_zero_mapper.mux_out[1](2)] |   2.263280 |    OKAY |
+|         9.040913s |       17.903464GB |                7782400 |         [\inst_r0_zero_mapper.mux_out[1](2)] |   2.106031 |    OKAY |
+|         9.529554s |       17.903464GB |                8192000 |              [\inst_kronecker.G5.xorout0(4)] |   1.948220 |    OKAY |
+|         9.995804s |       17.903464GB |                8601600 |         [\inst_r0_zero_mapper.mux_out[1](2)] |   1.859424 |    OKAY |
+|        10.460426s |       17.903464GB |                9011200 |                 [\inst_kronecker.G5.AND3(4)] |   1.759371 |    OKAY |
+|        10.946321s |       17.903464GB |                9420800 |         [\inst_r0_zero_mapper.mux_out[0](4)] |   1.916853 |    OKAY |
+|        11.432551s |       17.903464GB |                9830400 |         [\inst_r0_zero_mapper.mux_out[1](2)] |   2.089758 |    OKAY |
+|        11.925720s |       17.903464GB |               10240000 |         [\inst_r0_zero_mapper.mux_out[1](2)] |   1.838334 |    OKAY |
+|        12.413667s |       17.903464GB |               10649600 |                 [\inst_kronecker.G5.AND3(4)] |   2.175841 |    OKAY |
+|        12.889381s |       17.903464GB |               11059200 |                 [\inst_kronecker.G5.AND3(4)] |   2.121747 |    OKAY |
+|        13.371795s |       17.903464GB |               11468800 |                 [\inst_kronecker.G5.AND3(4)] |   2.634510 |    OKAY |
+|        13.847586s |       17.903464GB |               11878400 |                 [\inst_kronecker.G5.AND3(4)] |   2.472178 |    OKAY |
+|        14.322110s |       17.903464GB |               12288000 |                 [\inst_kronecker.G5.AND3(4)] |   2.191712 |    OKAY |
+|        14.785452s |       17.903464GB |               12697600 |              [\inst_kronecker.G7.xorout1(7)] |   1.889105 |    OKAY |
+|        15.267295s |       17.903464GB |               13107200 |              [\inst_kronecker.G7.xorout1(7)] |   2.067984 |    OKAY |
+|        15.746157s |       17.903464GB |               13516800 |              [\inst_kronecker.G3.xorout1(4)] |   2.186687 |    OKAY |
+|        16.217740s |       17.903464GB |               13926400 |              [\inst_kronecker.G3.xorout1(4)] |   1.979081 |    OKAY |
+|        16.678980s |       17.903464GB |               14336000 |              [\inst_kronecker.G3.xorout1(4)] |   2.051438 |    OKAY |
+|        17.160458s |       17.903464GB |               14745600 |              [\inst_kronecker.G7.xorout1(7)] |   2.064432 |    OKAY |
+|        17.643618s |       17.903464GB |               15155200 |              [\inst_kronecker.G7.xorout1(7)] |   2.046955 |    OKAY |
+|        18.123878s |       17.903464GB |               15564800 |                 [\inst_kronecker.G5.AND3(4)] |   2.015354 |    OKAY |
+|        18.605738s |       17.903464GB |               15974400 |              [\inst_kronecker.G3.xorout1(4)] |   2.255603 |    OKAY |
+|        19.090902s |       17.903464GB |               16384000 |              [\inst_kronecker.G3.xorout1(4)] |   2.504336 |    OKAY |
+|        19.581352s |       17.903464GB |               16793600 |              [\inst_kronecker.G3.xorout1(4)] |   2.430581 |    OKAY |
+|        20.057214s |       17.903464GB |               17203200 |              [\inst_kronecker.G3.xorout1(4)] |   2.493424 |    OKAY |
+|        20.538035s |       17.903464GB |               17612800 |                              [SB_out[12](7)] |   2.608676 |    OKAY |
+|        21.014272s |       17.903464GB |               18022400 |                              [SB_out[12](7)] |   2.776355 |    OKAY |
+|        21.493913s |       17.903464GB |               18432000 |                              [SB_out[12](7)] |   2.821633 |    OKAY |
+|        21.980079s |       17.903464GB |               18841600 |                              [SB_out[12](7)] |   3.033795 |    OKAY |
+|        22.465319s |       17.903464GB |               19251200 |                              [SB_out[12](7)] |   3.013618 |    OKAY |
+|        22.924781s |       17.903464GB |               19660800 |                              [SB_out[12](7)] |   2.725802 |    OKAY |
+|        23.402054s |       17.903464GB |               20070400 |                              [SB_out[12](7)] |   2.560030 |    OKAY |
+|        23.876696s |       17.903464GB |               20480000 |                              [SB_out[12](7)] |   2.466008 |    OKAY |
+|        24.351640s |       17.903464GB |               20889600 |                              [SB_out[12](7)] |   2.669482 |    OKAY |
+|        24.818568s |       17.903464GB |               21299200 |                              [SB_out[12](7)] |   2.686671 |    OKAY |
+|        25.297513s |       17.903464GB |               21708800 |                              [SB_out[12](7)] |   2.598967 |    OKAY |
+|        25.759634s |       17.903464GB |               22118400 |                              [SB_out[12](7)] |   2.391337 |    OKAY |
+|        26.242946s |       17.903464GB |               22528000 |              [\inst_kronecker.G5.xorout0(6)] |   2.532622 |    OKAY |
+|        26.713789s |       17.903464GB |               22937600 |              [\inst_kronecker.G5.xorout0(6)] |   2.130981 |    OKAY |
+|        27.202362s |       17.903464GB |               23347200 |                              [SB_out[12](7)] |   2.037018 |    OKAY |
+|        27.670570s |       17.903464GB |               23756800 |              [\inst_kronecker.G3.xorout1(4)] |   2.354980 |    OKAY |
+|        28.133394s |       17.903464GB |               24166400 |              [\inst_kronecker.G3.xorout1(4)] |   2.349940 |    OKAY |
+|        28.614320s |       17.903464GB |               24576000 |              [\inst_kronecker.G3.xorout1(4)] |   2.516905 |    OKAY |
+|        29.095005s |       17.903464GB |               24985600 |              [\inst_kronecker.G3.xorout1(4)] |   2.514374 |    OKAY |
+|        29.554023s |       17.903464GB |               25395200 |                          [p1_invXORr1[5](3)] |   2.537011 |    OKAY |
+|        30.032951s |       17.903464GB |               25804800 |                              [SB_out[12](7)] |   2.521118 |    OKAY |
+|        30.516113s |       17.903464GB |               26214400 |                              [SB_out[12](7)] |   2.693535 |    OKAY |
+|        30.994699s |       17.903464GB |               26624000 |                              [SB_out[12](7)] |   2.592854 |    OKAY |
+|        31.479789s |       17.903464GB |               27033600 |                              [SB_out[12](7)] |   2.806917 |    OKAY |
+|        31.946665s |       17.903464GB |               27443200 |                              [SB_out[12](7)] |   2.852752 |    OKAY |
+|        32.438501s |       17.903464GB |               27852800 |                              [SB_out[12](7)] |   2.650164 |    OKAY |
+|        32.923680s |       17.903464GB |               28262400 |                              [SB_out[12](7)] |   2.502576 |    OKAY |
+|        33.393608s |       17.903464GB |               28672000 |                              [SB_out[12](7)] |   2.319424 |    OKAY |
+|        33.865144s |       17.903464GB |               29081600 |                          [p1_invXORr1[5](3)] |   2.354396 |    OKAY |
+|        34.324367s |       17.903464GB |               29491200 |                              [SB_out[12](7)] |   2.150382 |    OKAY |
+|        34.804266s |       17.903464GB |               29900800 |         [\inst_r0_zero_mapper.mux_out[1](5)] |   2.241563 |    OKAY |
+|        35.281527s |       17.903464GB |               30310400 |         [\inst_r0_zero_mapper.mux_out[1](5)] |   2.467453 |    OKAY |
+|        35.765758s |       17.903464GB |               30720000 |         [\inst_r0_zero_mapper.mux_out[1](5)] |   2.346998 |    OKAY |
+|        36.250130s |       17.903464GB |               31129600 |                          [p1_invXORr1[5](3)] |   2.290449 |    OKAY |
+|        36.728103s |       17.903464GB |               31539200 |                          [p1_invXORr1[5](3)] |   2.272464 |    OKAY |
+|        37.193842s |       17.903464GB |               31948800 |              [\inst_kronecker.G6.xorout0(4)] |   2.421308 |    OKAY |
+|        37.676427s |       17.903464GB |               32358400 |              [\inst_kronecker.G6.xorout0(4)] |   2.595041 |    OKAY |
+|        38.159583s |       17.903464GB |               32768000 |                          [p1_invXORr1[5](3)] |   2.504006 |    OKAY |
+|        38.645031s |       17.903464GB |               33177600 |                          [p1_invXORr1[5](3)] |   2.359925 |    OKAY |
+|        39.114992s |       17.903464GB |               33587200 |                          [p1_invXORr1[5](3)] |   2.854167 |    OKAY |
+|        39.579800s |       17.903464GB |               33996800 |                          [p1_invXORr1[5](3)] |   2.925749 |    OKAY |
+|        40.055040s |       17.903464GB |               34406400 |                          [p1_invXORr1[5](3)] |   2.884721 |    OKAY |
+|        40.535301s |       17.903464GB |               34816000 |                          [p1_invXORr1[5](3)] |   3.299325 |    OKAY |
+|        41.021497s |       17.903464GB |               35225600 |                          [p1_invXORr1[5](3)] |   3.341572 |    OKAY |
+|        41.489252s |       17.903464GB |               35635200 |                          [p1_invXORr1[5](3)] |   3.266249 |    OKAY |
+|        41.971379s |       17.903464GB |               36044800 |                          [p1_invXORr1[5](3)] |   3.356477 |    OKAY |
+|        42.456314s |       17.903464GB |               36454400 |                          [p1_invXORr1[5](3)] |   3.074595 |    OKAY |
+|        42.934559s |       17.903464GB |               36864000 |                          [p1_invXORr1[5](3)] |   2.774062 |    OKAY |
+|        43.405565s |       17.903464GB |               37273600 |         [\inst_r0_zero_mapper.mux_out[1](5)] |   2.732303 |    OKAY |
+|        43.882724s |       17.903464GB |               37683200 |         [\inst_r0_zero_mapper.mux_out[1](5)] |   2.760715 |    OKAY |
+|        44.363111s |       17.903464GB |               38092800 |                          [p1_invXORr1[5](3)] |   2.857516 |    OKAY |
+|        44.845551s |       17.903464GB |               38502400 |                          [p1_invXORr1[5](3)] |   2.862729 |    OKAY |
+|        45.303004s |       17.903464GB |               38912000 |                          [p1_invXORr1[5](3)] |   3.219110 |    OKAY |
+|        45.757612s |       17.903464GB |               39321600 |                          [p1_invXORr1[5](3)] |   3.223037 |    OKAY |
+|        46.237106s |       17.903464GB |               39731200 |                          [p1_invXORr1[5](3)] |   3.024849 |    OKAY |
+|        46.721292s |       17.903464GB |               40140800 |                          [p1_invXORr1[5](3)] |   3.194133 |    OKAY |
+|        47.205469s |       17.903464GB |               40550400 |              [\inst_kronecker.G6.xorout0(4)] |   3.157235 |    OKAY |
+|        47.682455s |       17.903464GB |               40960000 |              [\inst_kronecker.G6.xorout0(4)] |   3.063529 |    OKAY |
+----------------------------------------------------------------------------------------------------------------------------------------
+Evaluation done in 47.6832 seconds!

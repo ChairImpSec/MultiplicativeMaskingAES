@@ -1,0 +1,35 @@
+Successfully parsed the settings file at "config.json".
+Successfully validated the settings file at "config.json".
+Successfully opened the library file at "../../library.json".
+Successfully read the library with name "NANG45".
+Successfully parsed 35 cells from the library.
+Successfully found buffer cell with identifier "BUF_X1" and others.
+"circuit"..."r0_mapper"..."mux_2to1"..."register_N8_1"..."register_N8_0"..."register_N16_0"..."kronecker"..."register_N1_0"..."And_DOM_indep_d1_0"..."register_N1_28"..."register_N1_27"..."register_N1_26"..."register_N1_25"..."And_DOM_indep_d1_6"..."register_N1_24"..."register_N1_23"..."register_N1_22"..."register_N1_21"..."And_DOM_indep_d1_5"..."register_N1_20"..."register_N1_19"..."register_N1_18"..."register_N1_17"..."And_DOM_indep_d1_4"..."register_N1_16"..."register_N1_15"..."register_N1_14"..."register_N1_13"..."And_DOM_indep_d1_3"..."register_N1_12"..."register_N1_11"..."register_N1_10"..."register_N1_9"..."And_DOM_indep_d1_2"..."register_N1_8"..."register_N1_7"..."register_N1_6"..."register_N1_5"..."And_DOM_indep_d1_1"..."register_N1_4"..."register_N1_3"..."register_N1_2"..."register_N1_1"..."register_N16_3"..."register_N16_2"..."register_N16_1"..."gf256_multiplier_0"..."gf256_multiplier_3"..."register_N8_7"..."register_N8_6"..."register_N8_5"..."inversion"..."register_N8_4"..."register_N8_3"..."register_N8_2"..."gf256_multiplier_2"..."gf256_multiplier_1"..."register_N2_0"..."register_N2_1"..."linear_mapping_0"..."linear_mapping_1"...done
+Successfully matched 19 fresh mask signals (for rising edge) [{PRNG[0]}, {PRNG[1]}, {PRNG[2]}, {PRNG[3]}, {PRNG[4]}, {PRNG[5]}, {PRNG[6]}, {PRNG[7]}, {PRNG[8]}, {PRNG[9]}, {PRNG[10]}, {PRNG[11]}, {PRNG[12]}, {PRNG[13]}, {PRNG[14]}, {PRNG[15]}, {PRNG[16]}, {PRNG[17]}, {PRNG[18]}].
+Evaluate the circuit under the robust probing model!
+77 different spots to probe detected!
+Generate univariate probing sets...539 probing sets generated...done!
+Remove duplicated probing sets...350 probing sets remain...done!
+Remove strictly less informative probing sets...Setting univariate case...done! 322 probing sets remain!
+-------------------------------------------------------------------------------------------------------------------------------------
+| #Standard Probes | #Extended Probes | #Probing Sets | Minimum #Probes per Set | Maximum #Probes per Set | Average #Probes per Set |
+-------------------------------------------------------------------------------------------------------------------------------------
+|              539 |              910 |           322 |                       2 |                      18 |                7.608696 |
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Evaluate security under the robust probing model!
+----------------------------------------------------------------------------------------------------------------------------------------
+|      Elapsed Time |      Required Ram |  Processed Simulations | Probing Set with highest Information Leakage |  -log10(p) |  Status |
+----------------------------------------------------------------------------------------------------------------------------------------
+|         0.516488s |       17.903588GB |                 409600 |                 [\inst_kronecker.G6.AND0(3)] |        inf | LEAKAGE |
+|         0.986387s |       17.903588GB |                 819200 |                 [\inst_kronecker.G6.AND0(3)] |        inf | LEAKAGE |
+|         1.451851s |       17.903588GB |                1228800 |                 [\inst_kronecker.G6.AND0(3)] |        inf | LEAKAGE |
+|         1.917019s |       17.903588GB |                1638400 |                 [\inst_kronecker.G6.AND0(3)] |        inf | LEAKAGE |
+|         2.382593s |       17.903588GB |                2048000 |                 [\inst_kronecker.G6.AND0(3)] |        inf | LEAKAGE |
+|         2.867071s |       17.903588GB |                2457600 |                 [\inst_kronecker.G6.AND0(3)] |        inf | LEAKAGE |
+|         3.362744s |       17.903588GB |                2867200 |                 [\inst_kronecker.G6.AND0(3)] |        inf | LEAKAGE |
+|         3.848374s |       17.903588GB |                3276800 |                 [\inst_kronecker.G6.AND0(3)] |        inf | LEAKAGE |
+|         4.331826s |       17.903588GB |                3686400 |                 [\inst_kronecker.G6.AND0(3)] |        inf | LEAKAGE |
+|         4.797148s |       17.903588GB |                4096000 |                 [\inst_kronecker.G6.AND0(3)] |        inf | LEAKAGE |
+----------------------------------------------------------------------------------------------------------------------------------------
+Evaluation done in 4.79778 seconds!

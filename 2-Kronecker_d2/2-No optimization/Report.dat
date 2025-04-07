@@ -1,0 +1,124 @@
+Successfully parsed the settings file at "config.json".
+Successfully validated the settings file at "config.json".
+Successfully opened the library file at "../../library.json".
+Successfully read the library with name "NANG45".
+Successfully parsed 35 cells from the library.
+Successfully found buffer cell with identifier "BUF_X1" and others.
+"circuit"..."and_dom_indep_d2_0"..."Register_N1_0"..."Register_N1_62"..."Register_N1_61"..."Register_N1_60"..."Register_N1_59"..."Register_N1_58"..."Register_N1_57"..."Register_N1_56"..."Register_N1_55"..."and_dom_indep_d2_6"..."Register_N1_54"..."Register_N1_53"..."Register_N1_52"..."Register_N1_51"..."Register_N1_50"..."Register_N1_49"..."Register_N1_48"..."Register_N1_47"..."Register_N1_46"..."and_dom_indep_d2_5"..."Register_N1_45"..."Register_N1_44"..."Register_N1_43"..."Register_N1_42"..."Register_N1_41"..."Register_N1_40"..."Register_N1_39"..."Register_N1_38"..."Register_N1_37"..."and_dom_indep_d2_4"..."Register_N1_36"..."Register_N1_35"..."Register_N1_34"..."Register_N1_33"..."Register_N1_32"..."Register_N1_31"..."Register_N1_30"..."Register_N1_29"..."Register_N1_28"..."and_dom_indep_d2_3"..."Register_N1_27"..."Register_N1_26"..."Register_N1_25"..."Register_N1_24"..."Register_N1_23"..."Register_N1_22"..."Register_N1_21"..."Register_N1_20"..."Register_N1_19"..."and_dom_indep_d2_2"..."Register_N1_18"..."Register_N1_17"..."Register_N1_16"..."Register_N1_15"..."Register_N1_14"..."Register_N1_13"..."Register_N1_12"..."Register_N1_11"..."Register_N1_10"..."and_dom_indep_d2_1"..."Register_N1_9"..."Register_N1_8"..."Register_N1_7"..."Register_N1_6"..."Register_N1_5"..."Register_N1_4"..."Register_N1_3"..."Register_N1_2"..."Register_N1_1"...done
+Successfully matched 21 fresh mask signals (for rising edge) [{PRNG[0]}, {PRNG[1]}, {PRNG[2]}, {PRNG[3]}, {PRNG[4]}, {PRNG[5]}, {PRNG[6]}, {PRNG[7]}, {PRNG[8]}, {PRNG[9]}, {PRNG[10]}, {PRNG[11]}, {PRNG[12]}, {PRNG[13]}, {PRNG[14]}, {PRNG[15]}, {PRNG[16]}, {PRNG[17]}, {PRNG[18]}, {PRNG[19]}, {PRNG[20]}].
+Evaluate the circuit under the robust probing model!
+66 different spots to probe detected!
+Generate univariate probing sets...10725 probing sets generated...done!
+Remove duplicated probing sets...10725 probing sets remain...done!
+-------------------------------------------------------------------------------------------------------------------------------------
+| #Standard Probes | #Extended Probes | #Probing Sets | Minimum #Probes per Set | Maximum #Probes per Set | Average #Probes per Set |
+-------------------------------------------------------------------------------------------------------------------------------------
+|              330 |              540 |         10725 |                       4 |                      28 |               15.331469 |
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Evaluate security under the robust probing model!
+----------------------------------------------------------------------------------------------------------------------------------------
+|      Elapsed Time |      Required Ram |  Processed Simulations | Probing Set with highest Information Leakage |  -log10(p) |  Status |
+----------------------------------------------------------------------------------------------------------------------------------------
+|         7.109550s |       17.926016GB |                1000000 |         [\G4.r1XORAND7(3), \G7.r1XORAND3(3)] |   3.974814 |    OKAY |
+|        14.142714s |       17.926016GB |                2000000 |         [\G4.r0XORAND2(2), \G7.r0XORAND4(2)] |   3.876543 |    OKAY |
+|        21.176705s |       17.926016GB |                3000000 |         [\G5.r1XORAND7(4), \G6.r1XORAND3(4)] |   6.453718 | LEAKAGE |
+|        28.210533s |       17.926016GB |                4000000 |         [\G5.r1XORAND7(4), \G6.r1XORAND3(4)] |   4.810603 |    OKAY |
+|        35.249655s |       17.926016GB |                5000000 |                [out[1](3), \G2.r0XORAND4(3)] |   3.948904 |    OKAY |
+|        42.287995s |       17.926016GB |                6000000 |              [\G4.r1XORAND7(2), \G5.AND9(2)] |   3.412371 |    OKAY |
+|        49.318686s |       17.926016GB |                7000000 |              [\G4.AND1(4), \G5.r2XORAND6(4)] |   3.961689 |    OKAY |
+|        56.351328s |       17.926016GB |                8000000 |              [\G1.r0XORAND4(5), \G2.AND1(5)] |   4.062172 |    OKAY |
+|        63.388792s |       17.926016GB |                9000000 |              [\G3.r1XORAND3(1), \G3.AND9(1)] |   4.535622 |    OKAY |
+|        70.417061s |       17.926016GB |               10000000 |              [\G3.r1XORAND3(1), \G3.AND9(1)] |   4.241992 |    OKAY |
+|        77.458468s |       17.926016GB |               11000000 |              [\G3.r1XORAND3(1), \G3.AND9(1)] |   3.802835 |    OKAY |
+|        84.489468s |       17.926016GB |               12000000 |              [\G3.r1XORAND3(1), \G3.AND9(1)] |   4.707108 |    OKAY |
+|        91.516235s |       17.926016GB |               13000000 |              [\G3.r1XORAND3(1), \G3.AND9(1)] |   4.274286 |    OKAY |
+|        98.554336s |       17.926016GB |               14000000 |         [\G3.r1XORAND7(5), \G4.r1XORAND3(5)] |   4.614175 |    OKAY |
+|       105.579157s |       17.926016GB |               15000000 |         [\G3.r1XORAND7(5), \G4.r1XORAND3(5)] |   4.625628 |    OKAY |
+|       112.607152s |       17.926016GB |               16000000 |         [\G3.r1XORAND7(5), \G4.r1XORAND3(5)] |   5.082091 | LEAKAGE |
+|       119.641787s |       17.926016GB |               17000000 |         [\G3.r1XORAND7(5), \G4.r1XORAND3(5)] |   4.590813 |    OKAY |
+|       126.682621s |       17.926016GB |               18000000 |         [\G3.r1XORAND7(5), \G4.r1XORAND3(5)] |   4.876943 |    OKAY |
+|       133.719095s |       17.926016GB |               19000000 |         [\G3.r1XORAND7(5), \G4.r1XORAND3(5)] |   4.555063 |    OKAY |
+|       140.749939s |       17.926016GB |               20000000 |         [\G3.r1XORAND7(5), \G4.r1XORAND3(5)] |   4.508660 |    OKAY |
+|       147.784376s |       17.926016GB |               21000000 |         [\G3.r1XORAND7(5), \G4.r1XORAND3(5)] |   4.065087 |    OKAY |
+|       154.823381s |       17.926016GB |               22000000 |         [\G3.r1XORAND7(5), \G4.r1XORAND3(5)] |   4.128048 |    OKAY |
+|       161.854435s |       17.926016GB |               23000000 |              [\G1.r2XORAND6(5), \G7.AND9(5)] |   3.472680 |    OKAY |
+|       168.886336s |       17.926016GB |               24000000 |         [\G3.r1XORAND7(5), \G4.r1XORAND3(5)] |   3.850044 |    OKAY |
+|       175.920221s |       17.926016GB |               25000000 |         [\G4.r2XORAND6(5), \G7.r1XORAND7(5)] |   3.873509 |    OKAY |
+|       182.955461s |       17.926016GB |               26000000 |         [\G1.r2XORAND8(4), \G2.r0XORAND2(4)] |   3.718180 |    OKAY |
+|       189.995352s |       17.926016GB |               27000000 |              [\G3.r0XORAND2(2), \G7.AND5(2)] |   3.768750 |    OKAY |
+|       197.037631s |       17.926016GB |               28000000 |         [\G2.r2XORAND6(3), \G3.r1XORAND7(3)] |   4.127350 |    OKAY |
+|       204.064123s |       17.926016GB |               29000000 |         [\G2.r2XORAND6(3), \G3.r1XORAND7(3)] |   4.761389 |    OKAY |
+|       211.106766s |       17.926016GB |               30000000 |         [\G2.r2XORAND6(3), \G3.r1XORAND7(3)] |   4.195210 |    OKAY |
+|       218.140291s |       17.926016GB |               31000000 |         [\G2.r2XORAND6(3), \G3.r1XORAND7(3)] |   4.211304 |    OKAY |
+|       225.175757s |       17.926016GB |               32000000 |         [\G2.r2XORAND6(3), \G3.r1XORAND7(3)] |   4.207748 |    OKAY |
+|       232.207921s |       17.926016GB |               33000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.198976 |    OKAY |
+|       239.243680s |       17.926016GB |               34000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.345081 |    OKAY |
+|       246.293347s |       17.926016GB |               35000000 |         [\G3.r1XORAND7(5), \G4.r1XORAND3(5)] |   4.288230 |    OKAY |
+|       253.322162s |       17.926016GB |               36000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.276852 |    OKAY |
+|       260.353205s |       17.926016GB |               37000000 |         [\G2.r2XORAND6(3), \G3.r1XORAND7(3)] |   4.153080 |    OKAY |
+|       267.393382s |       17.926016GB |               38000000 |         [\G2.r2XORAND6(3), \G3.r1XORAND7(3)] |   4.228180 |    OKAY |
+|       274.429853s |       17.926016GB |               39000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.335243 |    OKAY |
+|       281.461276s |       17.926016GB |               40000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.696591 |    OKAY |
+|       288.499765s |       17.926016GB |               41000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.447251 |    OKAY |
+|       295.532860s |       17.926016GB |               42000000 |              [\G1.AND9(4), \G6.r1XORAND7(4)] |   4.327200 |    OKAY |
+|       302.561191s |       17.926016GB |               43000000 |              [\G1.AND9(4), \G6.r1XORAND7(4)] |   4.196159 |    OKAY |
+|       309.595153s |       17.926016GB |               44000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.105781 |    OKAY |
+|       316.620670s |       17.926016GB |               45000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.365623 |    OKAY |
+|       323.650947s |       17.926016GB |               46000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.581241 |    OKAY |
+|       330.675340s |       17.926016GB |               47000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.892806 |    OKAY |
+|       337.701850s |       17.926016GB |               48000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.574456 |    OKAY |
+|       344.721950s |       17.926016GB |               49000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.851926 |    OKAY |
+|       351.752955s |       17.926016GB |               50000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   5.161494 | LEAKAGE |
+|       358.789891s |       17.926016GB |               51000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.946677 |    OKAY |
+|       365.836322s |       17.926016GB |               52000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.919101 |    OKAY |
+|       372.867994s |       17.926016GB |               53000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.826923 |    OKAY |
+|       379.901457s |       17.926016GB |               54000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.753063 |    OKAY |
+|       386.924088s |       17.926016GB |               55000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.710743 |    OKAY |
+|       393.959107s |       17.926016GB |               56000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.803328 |    OKAY |
+|       400.984001s |       17.926016GB |               57000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.791784 |    OKAY |
+|       408.010413s |       17.926016GB |               58000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   5.106693 | LEAKAGE |
+|       415.056203s |       17.926016GB |               59000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   4.244125 |    OKAY |
+|       422.096664s |       17.926016GB |               60000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   3.995989 |    OKAY |
+|       429.129015s |       17.926016GB |               61000000 |              [\G3.AND9(3), \G5.r1XORAND3(3)] |   3.894286 |    OKAY |
+|       436.150885s |       17.926016GB |               62000000 |         [\G1.r1XORAND7(2), \G4.r1XORAND7(2)] |   3.891546 |    OKAY |
+|       443.187270s |       17.926016GB |               63000000 |         [\G1.r1XORAND7(2), \G4.r1XORAND7(2)] |   4.066269 |    OKAY |
+|       450.224099s |       17.926016GB |               64000000 |         [\G2.r0XORAND4(2), \G4.r2XORAND8(2)] |   3.659519 |    OKAY |
+|       457.247879s |       17.926016GB |               65000000 |         [\G2.r0XORAND4(2), \G4.r2XORAND8(2)] |   3.805259 |    OKAY |
+|       464.281045s |       17.926016GB |               66000000 |         [\G2.r0XORAND4(2), \G4.r2XORAND8(2)] |   4.143268 |    OKAY |
+|       471.321297s |       17.926016GB |               67000000 |         [\G2.r0XORAND4(2), \G4.r2XORAND8(2)] |   4.510876 |    OKAY |
+|       478.363818s |       17.926016GB |               68000000 |         [\G2.r0XORAND4(2), \G4.r2XORAND8(2)] |   3.892749 |    OKAY |
+|       485.400991s |       17.926016GB |               69000000 |         [\G2.r0XORAND4(2), \G4.r2XORAND8(2)] |   3.890676 |    OKAY |
+|       492.443448s |       17.926016GB |               70000000 |         [\G2.r0XORAND4(2), \G4.r2XORAND8(2)] |   3.453578 |    OKAY |
+|       499.473609s |       17.926016GB |               71000000 |         [\G2.r0XORAND4(2), \G4.r2XORAND8(2)] |   3.476886 |    OKAY |
+|       506.506984s |       17.926016GB |               72000000 |         [\G2.r0XORAND4(2), \G4.r2XORAND8(2)] |   3.801451 |    OKAY |
+|       513.541324s |       17.926016GB |               73000000 |         [\G2.r0XORAND4(2), \G4.r2XORAND8(2)] |   3.576951 |    OKAY |
+|       520.571127s |       17.926016GB |               74000000 |         [\G1.r1XORAND7(2), \G4.r1XORAND7(2)] |   3.372647 |    OKAY |
+|       527.611419s |       17.926016GB |               75000000 |         [\G3.r2XORAND6(3), \G7.r2XORAND8(3)] |   3.450838 |    OKAY |
+|       534.654338s |       17.926016GB |               76000000 |         [\G3.r2XORAND6(3), \G7.r2XORAND8(3)] |   3.742754 |    OKAY |
+|       541.682708s |       17.926016GB |               77000000 |              [\G1.r0XORAND2(4), \G4.AND1(4)] |   3.509877 |    OKAY |
+|       548.719410s |       17.926016GB |               78000000 |         [\G3.r2XORAND6(3), \G7.r2XORAND8(3)] |   3.357972 |    OKAY |
+|       555.757679s |       17.926016GB |               79000000 |         [\G3.r1XORAND7(2), \G4.r1XORAND3(2)] |   3.283110 |    OKAY |
+|       562.788257s |       17.926016GB |               80000000 |         [\G3.r1XORAND7(2), \G4.r1XORAND3(2)] |   3.223977 |    OKAY |
+|       569.807556s |       17.926016GB |               81000000 |         [\G3.r1XORAND7(2), \G4.r1XORAND3(2)] |   3.473939 |    OKAY |
+|       576.834548s |       17.926016GB |               82000000 |         [\G3.r1XORAND7(2), \G4.r1XORAND3(2)] |   3.488373 |    OKAY |
+|       583.867980s |       17.926016GB |               83000000 |         [\G2.r2XORAND6(5), \G6.r2XORAND8(5)] |   3.749101 |    OKAY |
+|       590.904129s |       17.926016GB |               84000000 |         [\G2.r2XORAND6(5), \G6.r2XORAND8(5)] |   3.398170 |    OKAY |
+|       597.928223s |       17.926016GB |               85000000 |         [\G2.r0XORAND4(2), \G4.r2XORAND8(2)] |   3.252225 |    OKAY |
+|       604.954368s |       17.926016GB |               86000000 |              [\G1.r0XORAND2(4), \G4.AND1(4)] |   3.169503 |    OKAY |
+|       611.988373s |       17.926016GB |               87000000 |              [\G1.r0XORAND2(4), \G4.AND1(4)] |   3.273307 |    OKAY |
+|       619.022893s |       17.926016GB |               88000000 |              [\G1.r0XORAND2(4), \G4.AND1(4)] |   3.284121 |    OKAY |
+|       626.053031s |       17.926016GB |               89000000 |         [\G4.r2XORAND8(5), \G6.r2XORAND6(5)] |   2.994447 |    OKAY |
+|       633.078423s |       17.926016GB |               90000000 |         [\G1.r1XORAND7(2), \G4.r1XORAND7(2)] |   3.174461 |    OKAY |
+|       640.113023s |       17.926016GB |               91000000 |         [\G1.r1XORAND7(2), \G4.r1XORAND7(2)] |   3.345912 |    OKAY |
+|       647.145418s |       17.926016GB |               92000000 |         [\G1.r1XORAND7(2), \G4.r1XORAND7(2)] |   3.830901 |    OKAY |
+|       654.182481s |       17.926016GB |               93000000 |         [\G2.r2XORAND8(5), \G7.r0XORAND2(5)] |   3.545893 |    OKAY |
+|       661.211127s |       17.926016GB |               94000000 |         [\G2.r2XORAND8(5), \G7.r0XORAND2(5)] |   3.658158 |    OKAY |
+|       668.242517s |       17.926016GB |               95000000 |         [\G1.r1XORAND7(2), \G4.r1XORAND7(2)] |   3.843006 |    OKAY |
+|       675.264351s |       17.926016GB |               96000000 |         [\G1.r1XORAND7(2), \G4.r1XORAND7(2)] |   3.878780 |    OKAY |
+|       682.296354s |       17.926016GB |               97000000 |         [\G1.r1XORAND7(2), \G4.r1XORAND7(2)] |   4.011435 |    OKAY |
+|       689.328706s |       17.926016GB |               98000000 |         [\G1.r1XORAND7(2), \G4.r1XORAND7(2)] |   3.777800 |    OKAY |
+|       696.362283s |       17.926016GB |               99000000 |         [\G1.r1XORAND7(2), \G4.r1XORAND7(2)] |   4.065573 |    OKAY |
+|       703.394704s |       17.926016GB |              100000000 |         [\G1.r1XORAND7(2), \G4.r1XORAND7(2)] |   3.829864 |    OKAY |
+----------------------------------------------------------------------------------------------------------------------------------------
+Evaluation done in 703.396 seconds!

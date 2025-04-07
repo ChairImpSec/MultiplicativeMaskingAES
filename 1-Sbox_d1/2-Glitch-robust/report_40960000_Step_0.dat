@@ -1,0 +1,24 @@
+Report file after 40960000 simulations:
+
+1.) Summary of most leaking (and still active) probing sets per clock cycle: 
+
+Clock cycle 1: @[\inst_r0_zero_mapper.mux_out[1](1)] ==> [r0[1](1), r0[7](1), PRNG[0](1), PRNG[1](1), PRNG[2](1), PRNG[3](1), PRNG[4](1), PRNG[5](1), PRNG[6](1), PRNG[7](1)] -log10(p) = 0.807021 --> OKAY
+Clock cycle 2: @[\inst_kronecker.G3.AND3(2)] ==> [kron_in_reg[4](2), kron_in_reg[5](2)] -log10(p) = 1.94232 --> OKAY
+Clock cycle 3: @[p1_invXORr1[5](3)] ==> [reg_b1Xr0[0](3), reg_b1Xr0[1](3), reg_b1Xr0[2](3), reg_b1Xr0[3](3), reg_b1Xr0[4](3), reg_b1Xr0[5](3), reg_b1Xr0[6](3), reg_b1Xr0[7](3), reg_b0Xr0[0](3), reg_b0Xr0[1](3), reg_b0Xr0[2](3), reg_b0Xr0[3](3), reg_b0Xr0[4](3), reg_b0Xr0[5](3), reg_b0Xr0[6](3), reg_b0Xr0[7](3), r1[5](3)] -log10(p) = 3.02111 --> OKAY
+Clock cycle 4: @[\inst_kronecker.G6.xorout0(4)] ==> [\inst_kronecker.G4.reg_out3(4), \inst_kronecker.G4.reg_out1(4), \inst_kronecker.G3.reg_out2(4), \inst_kronecker.G3.reg_out0(4), PRNG[17](4)] -log10(p) = 3.06353 --> OKAY
+Clock cycle 5: @[\inst_kronecker.G3.AND3(5)] ==> [kron_in_reg[4](5), kron_in_reg[5](5)] -log10(p) = 1.94232 --> OKAY
+Clock cycle 6: @[\inst_kronecker.G3.AND3(6)] ==> [kron_in_reg[4](6), kron_in_reg[5](6)] -log10(p) = 1.94232 --> OKAY
+Clock cycle 7: @[\inst_kronecker.G3.AND3(7)] ==> [kron_in_reg[4](7), kron_in_reg[5](7)] -log10(p) = 1.94232 --> OKAY
+
+2.) Summary of the most leaking (and still active) probing sets: 
+
+1: @[\inst_kronecker.G6.xorout0(4)] ==> [\inst_kronecker.G4.reg_out3(4), \inst_kronecker.G4.reg_out1(4), \inst_kronecker.G3.reg_out2(4), \inst_kronecker.G3.reg_out0(4), PRNG[17](4)] -log10(p) = 3.06353 --> OKAY
+2: @[p1_invXORr1[5](3)] ==> [reg_b1Xr0[0](3), reg_b1Xr0[1](3), reg_b1Xr0[2](3), reg_b1Xr0[3](3), reg_b1Xr0[4](3), reg_b1Xr0[5](3), reg_b1Xr0[6](3), reg_b1Xr0[7](3), reg_b0Xr0[0](3), reg_b0Xr0[1](3), reg_b0Xr0[2](3), reg_b0Xr0[3](3), reg_b0Xr0[4](3), reg_b0Xr0[5](3), reg_b0Xr0[6](3), reg_b0Xr0[7](3), r1[5](3)] -log10(p) = 3.02111 --> OKAY
+3: @[\inst_kronecker.G3.xorout0(3)] ==> [kron_in_reg[5](3), kron_in_reg[12](3), PRNG[18](3)] -log10(p) = 2.52846 --> OKAY
+4: @[\inst_kronecker.G3.AND3(3)] ==> [kron_in_reg[4](3), kron_in_reg[5](3)] -log10(p) = 1.94232 --> OKAY
+5: @[\inst_kronecker.G3.AND3(6)] ==> [kron_in_reg[4](6), kron_in_reg[5](6)] -log10(p) = 1.94232 --> OKAY
+6: @[\inst_kronecker.G3.AND3(2)] ==> [kron_in_reg[4](2), kron_in_reg[5](2)] -log10(p) = 1.94232 --> OKAY
+7: @[\inst_kronecker.G3.AND3(5)] ==> [kron_in_reg[4](5), kron_in_reg[5](5)] -log10(p) = 1.94232 --> OKAY
+8: @[\inst_kronecker.G3.AND3(4)] ==> [kron_in_reg[4](4), kron_in_reg[5](4)] -log10(p) = 1.94232 --> OKAY
+9: @[\inst_kronecker.G3.AND3(7)] ==> [kron_in_reg[4](7), kron_in_reg[5](7)] -log10(p) = 1.94232 --> OKAY
+10: @[\inst_r0_zero_mapper.mux_out[1](5)] ==> [r0[1](5), r0[7](5), PRNG[0](5), PRNG[1](5), PRNG[2](5), PRNG[3](5), PRNG[4](5), PRNG[5](5), PRNG[6](5), PRNG[7](5)] -log10(p) = 1.88894 --> OKAY

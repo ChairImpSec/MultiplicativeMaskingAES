@@ -14,16 +14,19 @@ There are two main folders in this repository:
 
 ### **Sbox_d1**  
 This folder contains the first-order implementation of the AES Sbox in three sub-folders:  
-1. **Original form**: The original implementation of the proposed Sbox from [*Multiplicative Masking for AES in Hardware*](https://tches.iacr.org/index.php/TCHES/article/view/7282).  
-2. **Glitch-robust**: The Sbox structure with the proposed randomness optimization, ensuring no leakage under the glitch-extended probing model.  
-3. **Glitch- and transition-robust**: The Sbox structure with the proposed randomness optimization, ensuring no leakage under both glitch-extended and transition-extended probing models.  
+1. **Original form**: The original implementation of the Sbox with the optimization presented in [*Multiplicative Masking for AES in Hardware*](https://tches.iacr.org/index.php/TCHES/article/view/7282), which exhibits leakage under glitch-extended probing model.
+2. **Glitch-robust**: The Sbox structure with our proposed randomness optimization, ensuring no leakage under the glitch-extended probing model.  
+3. **Glitch- and transition-robust**: The Sbox structure with our proposed randomness optimization, ensuring no leakage under both glitch-extended and transition-extended probing models.  
 
 ### **Kronecker_d2**  
-This folder contains the second-order implementation of the Kronecker delta function with the proposed randomness optimization. Based on the PROLEAD report, this implementation exhibits no leakage.
+This folder contains the second-order implementation of the Kronecker delta function in two sub-folders:  
+1. **Original form**: The original implementation of the Kronecker delta function with the optimization presented in [*Multiplicative Masking for AES in Hardware*](https://tches.iacr.org/index.php/TCHES/article/view/7282), which exhibits leakage under glitch-extended probing model.  
+2. **No optimization**: The original implementation of the Kronecker delta function but without any optimization on fresh randomness re-use, which exhibits no leakage.
 
 ## Contact and Support
 
-For questions or comments, please contact **Hemin Rahimi** at [rahimihemn[at]gmail.com](mailto:rahimihemin@gmail.com).
+For questions or comments, please contact **Hemin Rahimi** at [rahimihemn[at]gmail.com](mailto:rahimihemin@gmail.com) and/or **Amir Moradi** at [amir.moradi[at]tu-darmstadt.de](mailto:amir.moradi@tu-darmstadt.de).
+
 
 ## Publication
 

@@ -1,0 +1,24 @@
+Report file after 4096000 simulations:
+
+1.) Summary of most leaking (and still active) probing sets per clock cycle: 
+
+Clock cycle 1: @[\inst_kronecker.G2.xorout0(1)] ==> [kron_in_reg[3](1), kron_in_reg[10](1), PRNG[17](1)] -log10(p) = 0.934334 --> OKAY
+Clock cycle 2: @[\inst_kronecker.G5.AND0(2)] ==> [\inst_kronecker.G2.reg_out2(2), \inst_kronecker.G2.reg_out0(2), \inst_kronecker.G1.reg_out2(2), \inst_kronecker.G1.reg_out0(2)] -log10(p) = 2.02331 --> OKAY
+Clock cycle 3: @[\inst_kronecker.G6.xorout1(3)] ==> [\inst_kronecker.G4.reg_out2(3), \inst_kronecker.G4.reg_out0(3), \inst_kronecker.G3.reg_out3(3), \inst_kronecker.G3.reg_out1(3), \inst_kronecker.r6(3)] -log10(p) = inf --> LEAKAGE
+Clock cycle 4: @[\inst_kronecker.G6.xorout1(4)] ==> [\inst_kronecker.G4.reg_out2(4), \inst_kronecker.G4.reg_out0(4), \inst_kronecker.G3.reg_out3(4), \inst_kronecker.G3.reg_out1(4), \inst_kronecker.r6(4)] -log10(p) = inf --> LEAKAGE
+Clock cycle 5: @[\inst_kronecker.G7.xorout0(5)] ==> [\inst_kronecker.G6.reg_out3(5), \inst_kronecker.G6.reg_out1(5), \inst_kronecker.G5.reg_out2(5), \inst_kronecker.G5.reg_out0(5), PRNG[16](5)] -log10(p) = inf --> LEAKAGE
+Clock cycle 6: @[\inst_kronecker.G6.xorout0(6)] ==> [\inst_kronecker.G4.reg_out3(6), \inst_kronecker.G4.reg_out1(6), \inst_kronecker.G3.reg_out2(6), \inst_kronecker.G3.reg_out0(6), \inst_kronecker.r6(6)] -log10(p) = inf --> LEAKAGE
+Clock cycle 7: @[\inst_kronecker.G6.xorout1(7)] ==> [\inst_kronecker.G4.reg_out2(7), \inst_kronecker.G4.reg_out0(7), \inst_kronecker.G3.reg_out3(7), \inst_kronecker.G3.reg_out1(7), \inst_kronecker.r6(7)] -log10(p) = inf --> LEAKAGE
+
+2.) Summary of the most leaking (and still active) probing sets: 
+
+1: @[\inst_kronecker.G6.AND0(3)] ==> [\inst_kronecker.G4.reg_out2(3), \inst_kronecker.G4.reg_out0(3), \inst_kronecker.G3.reg_out2(3), \inst_kronecker.G3.reg_out0(3)] -log10(p) = inf --> LEAKAGE
+2: @[\inst_kronecker.G6.AND0(5)] ==> [\inst_kronecker.G4.reg_out2(5), \inst_kronecker.G4.reg_out0(5), \inst_kronecker.G3.reg_out2(5), \inst_kronecker.G3.reg_out0(5)] -log10(p) = inf --> LEAKAGE
+3: @[\inst_kronecker.G7.AND3(7)] ==> [\inst_kronecker.G6.reg_out3(7), \inst_kronecker.G6.reg_out1(7), \inst_kronecker.G5.reg_out3(7), \inst_kronecker.G5.reg_out1(7)] -log10(p) = inf --> LEAKAGE
+4: @[\inst_kronecker.G7.AND3(6)] ==> [\inst_kronecker.G6.reg_out3(6), \inst_kronecker.G6.reg_out1(6), \inst_kronecker.G5.reg_out3(6), \inst_kronecker.G5.reg_out1(6)] -log10(p) = inf --> LEAKAGE
+5: @[\inst_kronecker.G6.AND0(4)] ==> [\inst_kronecker.G4.reg_out2(4), \inst_kronecker.G4.reg_out0(4), \inst_kronecker.G3.reg_out2(4), \inst_kronecker.G3.reg_out0(4)] -log10(p) = inf --> LEAKAGE
+6: @[\inst_kronecker.G6.AND3(4)] ==> [\inst_kronecker.G4.reg_out3(4), \inst_kronecker.G4.reg_out1(4), \inst_kronecker.G3.reg_out3(4), \inst_kronecker.G3.reg_out1(4)] -log10(p) = inf --> LEAKAGE
+7: @[\inst_kronecker.G7.AND0(4)] ==> [\inst_kronecker.G6.reg_out2(4), \inst_kronecker.G6.reg_out0(4), \inst_kronecker.G5.reg_out2(4), \inst_kronecker.G5.reg_out0(4)] -log10(p) = inf --> LEAKAGE
+8: @[\inst_kronecker.G7.AND3(4)] ==> [\inst_kronecker.G6.reg_out3(4), \inst_kronecker.G6.reg_out1(4), \inst_kronecker.G5.reg_out3(4), \inst_kronecker.G5.reg_out1(4)] -log10(p) = inf --> LEAKAGE
+9: @[\inst_kronecker.G6.AND0(6)] ==> [\inst_kronecker.G4.reg_out2(6), \inst_kronecker.G4.reg_out0(6), \inst_kronecker.G3.reg_out2(6), \inst_kronecker.G3.reg_out0(6)] -log10(p) = inf --> LEAKAGE
+10: @[\inst_kronecker.G6.AND3(6)] ==> [\inst_kronecker.G4.reg_out3(6), \inst_kronecker.G4.reg_out1(6), \inst_kronecker.G3.reg_out3(6), \inst_kronecker.G3.reg_out1(6)] -log10(p) = inf --> LEAKAGE

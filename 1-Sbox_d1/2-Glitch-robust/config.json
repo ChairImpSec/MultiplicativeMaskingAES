@@ -1,0 +1,50 @@
+{
+  "performance": {
+    "max_number_of_threads": "half",
+    "minimize_probing_sets": "aggressive",
+    "number_of_entries_in_report": 10,
+    "compact_distributions": true
+  },
+  "simulation": {
+    "groups": [
+      "8'h$$",
+      "8'hFF"
+    ],
+    "number_of_clock_cycles": 7,
+    "output_shares": [
+      "SB_out[7:0]",
+      "SB_out[15:8]"
+    ],
+    "expected_output": [
+      "8'h$$",
+      "8'h16"
+    ],
+    "always_random_inputs": [
+      "PRNG[19:0]"
+    ],
+    "input_sequence": [
+      {
+        "signals": [
+          {
+            "name": "inp[7:0]",
+            "value": "group_in0[7:0]"
+          },
+          {
+            "name": "inp[15:8]",
+            "value": "group_in1[7:0]"
+          }
+        ]
+      }
+    ],
+    "number_of_simulations": 40960000,
+    "number_of_simulations_per_step": 409600,
+    "number_of_simulations_per_write": 40960000
+  },
+  "hardware": {
+    "clock_signal_name": "clk"
+  },
+  "side_channel_analysis": {
+    "order": 1,
+    "transitional_leakage": false
+  }
+}
